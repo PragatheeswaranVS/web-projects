@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+}
+:root
+{
+    --textcolor:whitesmoke;
+    --border:10px solid black ;
+
+}
+body
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+section
+{
+    min-height: 100vh;
+    min-width: 100%;
+}
+.landing
+{
+    min-height: 100%;
+    background-image: url(./images/pexels-chevanon-302905.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:  bottom;
+}
+.navigator
+{
+    color:var(--textcolor);
+    display: flex;
+    padding: 1rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    right:-20px;
+
+}
+.navigator a{
+    color: var(--textcolor);
+    font-size: 1.8rem;
+}
+.navigator a:hover,.navigator a:focus
+{
+    text-decoration:underline;
+}
+.home .home-page
+{
+    color: var(--textcolor);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left:15%;
+    top:35%;
+    line-height: 4rem;
+}
+.home-page h2
+{
+    font-family:sans-serif;
+    font-weight: bolder;
+    font-size: 4rem;
+    letter-spacing: 1px;
+}
+.home-page p
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    word-spacing: 2px; 
+}
+.home-page .call-now
+{
+    min-height:8%;
+    width: 25%;
+    padding: 1rem;
+    text-transform: uppercase;
+    background-color: rgb(240, 50, 50);
+    border-radius: 5px;
+    border: none;
+    color: var(--textcolor);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    display: flex;
+    flex-wrap: nowrap;
+    cursor: pointer;
+}
+.home-page .call-now:hover
+{
+    background-color: var(--textcolor);
+    color: rgb(240, 50, 50);
+    transition: 0.8s ease-in-out;
+}
+.about-page
+{
+  min-height: 100vh;
+  position: relative;
+}
+.about-page .content
+{
+    width:50%;
+    padding: 2rem;
+    gap: 2rem;
+    position: absolute;
+    top:20%;
+    left: 20%;
+}
+.about-page .content h2
+{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    
+}
+.about-page .content p
+{
+    width: 60%;
+    font-size: 1rem;
+}
+.about-image img
+{
+    float: right;
+    width:30%;
+    height: 60%;
+    position: absolute;
+    top:20%;
+    right: 10%;
+}
+.menu-title h2
+{
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2rem;
+    flex-wrap: wrap;
+    min-height: 100%;
+}
+.menu-card
+{
+    min-height: 80vh;
+    width: 85%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.coffee-menu
+{
+    height: 100%;
+    width: 24%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    justify-content:space-between;
+    gap:1rem;
+    flex-wrap: wrap;
+    box-shadow: 2px 5px 12px rgba(21, 21, 22, 0.697);
+}
+.coffee-menu img
+{
+    width:100%;
+}
+.coffee-menu figcaption
+{
+    color: aliceblue;
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    
+    
+}
+.coffee-menu:hover,
+.coffee-menu:focus
+{
+    background-color: rgb(219, 48, 48);
+    transform:scale(1.1);
+    transition: 0.8s ease-in-out;
+}
+.service-page
+{
+    min-height: 100vh;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.service-content h2
+{
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+.service-box
+{
+    width: 80vw;
+    height: 70vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.service-card
+{
+    height:60%;
+    width:30%;
+    box-shadow: 2px 5px 12px rgb(91, 82, 84);
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 1rem;
+    gap:2rem;
+    background-color: rgba(184, 68, 234, 0.205);
+    border-radius: 12px;
+}
+.service-card:hover,
+.service-card:focus
+{
+
+    background-color: rgba(202, 91, 233, 0.493);
+    transition: 0.8s ease-in-out;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px 5px  rgba(202, 91, 233, 0.493);
+}
+
+.service-card h5{
+   font-size: 1.5rem;
+   font-weight: 500;
+   text-transform: capitalize;
+   text-align: center;
+}
+.service-card p
+{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.54);
+}
+.contact-page
+{
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:2rem;
+}
+.contact-page h2
+{
+    text-transform: uppercase; 
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.contact-box
+{
+    display: flex;
+    flex-direction:column;
+    background-color:rgba(23, 144, 224, 0.2);
+    height:70vh;
+    width:40%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.contact-box input,textarea,form button{
+    display: block;
+    margin: 2rem 0;
+    padding: 0.5rem;
+    min-width:100%;
+    border: none;
+    outline: none;
+    width: 250px;
+    resize: none;
+}
+.contact-box input:hover,
+.contact-box input:focus{
+    animation-name: "uplift";
+    transition: all 0.5s ease-in;
+}
+
+@keyframes uplift{
+    0%
+    {
+        transform: translate(0);
+    }
+    100%
+    {
+
+        transform: translate(0,-12px);   
+    }
+}   
